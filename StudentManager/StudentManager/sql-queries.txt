@@ -1,0 +1,22 @@
+create database if not exists `student_manager`;
+use `student_manager`;
+
+insert into student_manager.roles values (1,'ADMIN');
+insert into student_manager.roles values (2,'USER');
+ 
+insert into student_manager.users values(1,'$2a$12$3SToGboGxHffj2Oi3YR7AuKpDVR3GkKbBggCgakrr5ilOPK/1C8g2','admin');
+insert into student_manager.users values(2,'$2a$12$HqrhdYgSO9di2m8krXl4C.14UAB2fnlOr51eNoQrON4wynEFfd7Ke','user');
+ 
+insert into student_manager.users_roles values(1,1);
+insert into student_manager.users_roles values(2,2);
+ 
+select * from `student_manager`.student;
+ 
+ Admin User Credentials Used Are:
+ Login Id: admin
+ Password: admin
+ 
+ 
+ Normal User Credentials Used Are:
+ Login Id: user
+ Password: password
